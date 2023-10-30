@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+    <!--Thank you for visiting and pressing the inspect element, or maybe you cloned this code via my GitHub-->
+    <!--                                                                                 -->
+    <!--Source code : https://github.com/RavioliMavioli/RavioliMavioli.github.io -->
+    <!--                                                                                 -->
+    <!--LIBRARY AND SCRIPT USED-->
+    <!--                                                                                 -->
+    <!--Pacman-loading animation    : https://codepen.io/iddar/pen/xwXowq -->
+    <!--Animate on Scroll           : https://michalsnik.github.io/aos/ -->
+    <!--Lightbox                    : https://github.com/lokesh/lightbox2 -->
+    <!--Google Analytics            : https://analytics.google.com/ -->
+    <!--Scrolling script            : https://stackoverflow.com/questions/49820013/javascript-scrollintoview-smooth-scroll-and-offset -->
+    <!--                                                                                 -->
+
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZP9QSS9HW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FZP9QSS9HW');
+    </script>
+    
+    <!--Import files and libaries-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-9">
+    <title>Perdizx</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/boxshadow.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="js/scroll.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/Lightbox/lightbox-plus-jquery.js"></script>
+    <script>lightbox.option({ disableScrolling: true });</script>
+    
+    
+</head>
+<body>
+    <!--Page loading animation-->
+    <div class="loader-wrapper">
+        <span class="pac-man"></span>
+        <div class="loading-text"><p>Loading assets...</p></div>
+    </div>
+    <!--Header section (Icon, title, etc)-->
+    <div id="landing" class="header" data-aos="fade-up" loading="lazy">
+    <div id="header-img" class="header"></div>
+    <div id="scrollpath"></div>
+    <div id="scrollbar"></div>
+    <div class="Title">
+        <img src="resource/image/icon.png" class="shad-mid">
+        <h1>PerdiZx</h1>
+        <p>Good Things Take a Time.</p>
+        <svg></svg><br>
+        
+        <div class="external-links"><br>
+            <ul>
+                <li><a id="facebook" href="#" target="_blank" onmouseover="ExternalLinksEnter('facebook')" onmouseleave="ExternalLinksLeave()"><img src="resource/svg/facebook.svg"><p>Facebook</p></a></li>
+                <li><a id="instagram" href="https://www.instagram.com/perdizx_/" target="_blank" onmouseover="ExternalLinksEnter('instagram')" onmouseleave="ExternalLinksLeave()"><img src="resource/svg/instagram.svg"><p>Instagram</p></a></li>
+                <li><a id="youtube" href="https://www.youtube.coms" target="_blank" onmouseover="ExternalLinksEnter('youtube')" onmouseleave="ExternalLinksLeave()"><img src="resource/svg/youtube.svg"><p>YouTube</p></a></li>
+                <li><a id="github" href="#" target="_blank" onmouseover="ExternalLinksEnter('github')" onmouseleave="ExternalLinksLeave()"><img src="resource/svg/Github.svg"><p>GitHub</p></a></li>
+                
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <!--Sticky navbar-->
+    <div class="navbar box-mid">
+        <div class="navbrand" data-aos="fade-up" data-aos-once=true><a onclick="scrollToTarget('landing')">Perdizx</a></div>
+        <div class="navcenter" data-aos="fade-up" data-aos-once=true>
+            <a id="nav-contact" onclick="scrollToTargetAdjusted('contact',75), Unclick()">Contact</a>
+        </div>
+        <div class="navsupport" data-aos="fade-up" data-aos-once=true><a onclick="scrollToTargetAdjusted('contact',75)" target="_blank">Contact</a>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+    
+        </div>
+    </div>
+
+
+    <!--Main section-->
+    <div class="content">
+
+        <!--Portfolio section-->
+        <div id="portfolio">
+            <div class="text-title" data-aos="fade-up"><p>My Gallery</p></div>
+            <div class="portfolio-container">
+
+                <div class="portfolio-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="portfolio-images" >
+                        <a href="resource/image/portfolio/big/1.jpg" data-lightbox="rav-portfolio"><img src="resource/image/portfolio/smol/1.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="portfolio-images" >
+                        <a href="resource/image/portfolio/big/2.jpg" data-lightbox="rav-portfolio"><img src="resource/image/portfolio/smol/2.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="portfolio-images" >
+                        <a href="resource/image/portfolio/big/3.jpg" data-lightbox="rav-portfolio"><img src="resource/image/portfolio/smol/3.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="portfolio-images" >
+                        <a href="resource/image/portfolio/big/4.jpg" data-lightbox="rav-portfolio"><img src="resource/image/portfolio/smol/4.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="portfolio-images" >
+                        <a href="resource/image/portfolio/big/5.jpg" data-lightbox="rav-portfolio"><img src="resource/image/portfolio/smol/5.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="portfolio-images" >
+                        <a href="resource/image/portfolio/big/6.jpg" data-lightbox="rav-portfolio"><img src="resource/image/portfolio/smol/6.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="portfolio-images" >
+                        <a href="resource/image/portfolio/big/7.jpg" data-lightbox="rav-portfolio"><img src="resource/image/portfolio/smol/7.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="portfolio-images" >
+                        <a href="resource/image/portfolio/big/8.jpg" data-lightbox="rav-portfolio"><img src="resource/image/portfolio/smol/8.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <!--Page loading animation when loading is complete-->
+    <script>
+        $(window).on("load", function(){
+             $(".loader-wrapper").fadeOut("slow");
+        })
+    </script>
+    </div>
+    <!--Animate on Scroll library initialization-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:-75,
+        delay: 0,
+        duration: 1000,
+        easing: 'ease',
+        once: false,
+        mirror: false,
+        anchorPlacement: 'top-bottom'
+
+        });
+    </script>
+    <script src="js/hamburger.js"></script>
+    <script>Initialize()</script>
+</body>
+<footer class="shad-bold">
+    <div class="B text-normal opacity-mid"><p> &#169; 2023<br><br></p></div>
+    
+    <div class="B text-normal"><p>♥ Perdi. All rigths reserve ♥</p></div>
+    <div class="B text-normal"><p>Powered by pure HTML/CSS and JavaScript<br><br></p></div>
+
+    <div class="B text-normal opacity-mid"><p>Contact: perdixz17@gmail.com</p></div>
+</footer>
+</html>
+<!-- check -->
